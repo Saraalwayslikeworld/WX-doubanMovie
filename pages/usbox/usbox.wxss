@@ -1,0 +1,66 @@
+/* pages/usbox/usbox.wxss */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1531836370280'); /* IE9*/
+  src: url('iconfont.eot?t=1531836370280#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAfcAAsAAAAACzwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW70lGY21hcAAAAYAAAACLAAAB8j1WoXBnbHlmAAACDAAAA7MAAASEBbWrjmhlYWQAAAXAAAAALwAAADYSB3WsaGhlYQAABfAAAAAcAAAAJAfeA4dobXR4AAAGDAAAABMAAAAYF+kAAGxvY2EAAAYgAAAADgAAAA4EBgL+bWF4cAAABjAAAAAeAAAAIAEWAHFuYW1lAAAGUAAAAUUAAAJtPlT+fXBvc3QAAAeYAAAAQwAAAFgVFqxweJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2Bk/sM4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVDz3YW7438AQw9zD0AgUZgTJAQAq7QzKeJzFkTEOgzAMRb+TUCHEUXoLJlqGHqUjA1OPyuAcg37bZOAE/OhF/l+xEsUAOgCZPEkB5AeBaWMqnmcMnhd86Ef0SKxXTTrpXpfjYNrc7K5JeLotc4WdmTd2XkEeuE1y39VXjb5/T9eT9YRP1BTYZHQK7Od0D2xydQ5skvUVeP0OrLcuAdIfaP8kkwB4nF1SXYgbVRS+Z2buvZPZyUwySWaSyU6yM9Od6bp/bZpMUGlSumLp4mrdfaqsRaFkn7RPSxErTbuUigS0r6IPFqkQ3EJXwZdFxTdFBMuC7b4UrYpQAkUf3Uw9s2lfHC733PPdO9855zuHUEIe/Spui0WSIwfJYfIcOUUIsGnwNMEBN6zPCdNQcGnBymti6Icu97058ShYHsubtageWIwzHTSowBG3FoVzQgiNekt4FmqmA1Aq2yvG5LghfgBKMaxciReF61Co+uN6azY+OdPO1yZy8nnVMEqG0ZMZpbIgSLoGb1hmiqYUFn9KdbuwXZ0SqqCWQvuF0+mJsvH6u/U3nUkrBdDtQq48oX3WztpZXBdsM2eUeCYtF+20fyAP538fK+ZUJ7hP8GNY60WJiF2ikyqZJy3yIjmD1foe49kKWEda0MjWA+prUMjmzcRvZudA/J/PWegdTfYgakNkgTsHYRavXKTIaoBa7LO5o9chHIsKqIRTiEzHga8buJuNRBsnThBzdFsEVTc0LlLmWiIsDA8eWwFYOSbstpfR7v013QBoTAu7U00Qmk8JgWPG3REtdE2ngzb+87FvJxYPw8eAgMAfOdDflrnOFMlQy0Mrob4zCjEM2svij0g+DKZGQe5gsEQvAfXq7uuVIS7qhEVVoBY1AxIywlsAWF09QPFMYkWkiaV/921Mwav7wOJ7d3fi3zTtX2gg5icQuHd3oIKQuEAffWP7vr0LLqXx4OevHu5dfALF9yiFHEKEJLN5XfxYfA1nMyA17NdZQia5F7ShBVVMRwfmzWMWk1YtSmwyh1Uwa9gWjrlhAzBlDUTsCB7QxeZZ5ujP/ZdsHgIPWZAxCvCcNBRXDfx3lLS0SIvqD6pKTzKDLtA0bF0Y2wfT3z8BtV+2BpQ++PKLB5QObm1sStLmxuVkPzerlDo6Ty2mmJiBgvqKUlJOpwtCRpD5UorrnZIyK9umqsn9lExXWVG9IcsdQZLSOu8rXHqVWekbnHfGJGmwdWuQsG8NhNvizcsbm6KIQW6eWM2zjFhSTnBTXdM1fojSQzj4a6rJF5UiZFh+VSUjDS+JQ7FHNOKQCpkhswh6QRhkmtEByzQ46oMtZIJlSs0WhMnE4tYSUCczz7wQds70j1+9ug6He++thzP/fLLUa551ll4G6crGJbt6+334CTPm+fGy0tcrs/rU88evwfq1c+FLK/H9jz7cFpefidbiv99aP1V/+mGv97mw1+mPlct5zpV+ZtrNkv8Ah+/aWQB4nGNgZGBgAOLNi9UnxfPbfGXgZmEAgeslEpcQ9P96FgbmHiCXg4EJJAoAKiAKRQB4nGNgZGBgbvjfwBDDwgACQJKRARWwAQBHDAJveJxjYWBgYH7JwMDCgIoBEp8BAQAAAAAAAHYBDgFOAfACQgAAeJxjYGRgYGBjSAViEGACYi4gZGD4D+YzAAATUwGIAAB4nGWPTU7DMBCFX/oHpBKqqGCH5AViASj9EatuWFRq911036ZOmyqJI8et1ANwHo7ACTgC3IA78EgnmzaWx9+8eWNPANzgBx6O3y33kT1cMjtyDRe4F65TfxBukF+Em2jjVbhF/U3YxzOmwm10YXmD17hi9oR3YQ8dfAjXcI1P4Tr1L+EG+Vu4iTv8CrfQ8erCPuZeV7iNRy/2x1YvnF6p5UHFockikzm/gple75KFrdLqnGtbxCZTg6BfSVOdaVvdU+zXQ+ciFVmTqgmrOkmMyq3Z6tAFG+fyUa8XiR6EJuVYY/62xgKOcQWFJQ6MMUIYZIjK6Og7VWb0r7FDwl57Vj3N53RbFNT/c4UBAvTPXFO6stJ5Ok+BPV8bUnV0K27LnpQ0kV7NSRKyQl7WtlRC6gE2ZVeOEXpc0Yk/KGdI/wAJWm7IAAAAeJxjYGKAAC4G7ICNkYmRmZGFkZWRjZGdgbGCuyAxMyMxLz0JiNlz8hNTMvPSOVMyE/OKQaJsxamJRckZDAwANz4OPwA=') format('woff'),
+  url('iconfont.ttf?t=1531836370280') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1531836370280#iconfont') format('svg'); /* iOS 4.1- */
+}
+@keyframes rotate{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(359deg)}
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-loading:before { 
+  display: inline-block;
+  content: "\e6e2";  
+  animation: rotate 3s linear infinite;  
+}
+
+.movie {
+    position: relative;
+    height: 270rpx;
+    padding: 20rpx 0rpx;
+    border-bottom: 1rpx solid #ddd;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.movie image {
+    float: left;
+    width: 190rpx;
+    height: 100%;
+}
+.movie .msg {
+    padding-left: 210rpx;
+    padding-right: 20rpx;
+}
+.movie .msg>view {
+    margin-top: 10rpx;
+    color: #888;
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 2;    
+    overflow: hidden;
+}
+
+.movie .msg>.title {
+    margin-top: 0;
+    font-size: 16px;
+    color: #333;
+}
+.movie .msg .rank {
+    color: #cf5656;
+}
+.loading {
+    padding: 24rpx;
+    text-align: center;
+    color: #2aae5c;
+    font-size: 12px;
+}

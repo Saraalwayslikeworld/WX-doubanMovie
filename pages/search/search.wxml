@@ -1,0 +1,26 @@
+<!--pages/search/search.wxml-->
+<template name="Item">
+    <image src="{{images.small}}" alt="" />
+    <view class="msg">
+        <view class="title">{{title}}</view>
+        <view><text class="score">{{rating.average}}</text>分/{{collect_count}} 收藏</view>
+        <view class="type">{{ year}}<text wx:for="{{genres}}" wx:key="index">/{{item}}</text></view>
+        <view>导演:{{directors[0].name}}</view>
+        <view>主演:<text wx:for="{{casts}}" wx:key="item.name">{{item.name}}<text hidden="{{index===casts.length-1}}">,</text></text></view>
+    </view>
+  </template>
+<view>
+<input type="text" placeholder='请输入搜索关键词' placeholder-class="placeholder"bindconfirm ="search" confirm-type='search' cursor="100"></input>
+</view>
+<view wx:if="{{inputValue!==''}}" class="search">搜索“{{inputValue}}”的结果</view>
+<scroll-view>
+<block wx:if="{{results.length>0}}">
+<view  wx:for="{{results}}" wx:key="item.id" class="movie">
+    <template is="Item" data="{{...results[index]}}" />
+</view>
+</block>
+<view  class='loading'>
+  <text hidden="{{!isLoading}}"  class="iconfont  icon-loading"></text>
+  <text hidden="{{!isFinish}}">下面没有了 ：）</text>
+</view>
+</scroll-view>

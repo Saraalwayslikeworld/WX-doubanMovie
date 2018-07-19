@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/top250/top250",
+    "pages/usbox/usbox",
+    "pages/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#2aac5e",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/top250/top250",
+        "text": "Top250"
+      },
+      {
+        "pagePath": "pages/usbox/usbox",
+        "text": "北美票房榜"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      }
+    ]
+  }
+}
